@@ -1,0 +1,207 @@
+/*HOME PAGE CARDS*/
+ th.homecards, td.homecards {
+ 	padding: 10px;
+ }
+
+ th.homecards {
+ 	text-align: center;
+ }
+
+ table.homecards {
+ 	width: 70%;
+ 	margin: auto;
+ 	margin-bottom: 20px;
+ }
+
+ span.headertitle {
+ 	padding: 1% 20%;
+ }
+
+span#lightblueheader {
+	background-color: #00c6d4;
+}
+
+span#darkblueheader {
+	background-color: #002863;
+}
+
+p.headertitle {
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	margin: 1%;
+}
+
+table#lightbackgroundheader{
+	background-color: #dbdbdb;
+}
+
+table#darkbackgroundheader{
+	background-color: #bbb;
+}
+
+ /*FOR CALENDAR CARD*/
+td#homecalendardates {
+	text-align: center;
+}
+
+.calendardates, td.date, td.datedescription{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+table.calendardates {
+	width: 100%;
+	margin: auto;
+}
+
+td.date, td.datedescription {
+	margin: 0px;
+}
+
+p.date {
+	text-align: center;
+	font-size: 20px;
+	margin: 10px;
+}
+
+p span.date {
+	background-color: #00c6d4;
+	color: white;
+	border-radius: 5px;
+	padding: 0px 10px;
+}
+
+p.datedescription {
+	color: #FFFF;
+	text-align: center;
+	font-size: 16px;
+	margin: 10px;
+}
+
+td#homecalendarbutton {
+	text-align: center;
+}
+
+a#homecalendarbutton {
+	font-size: 18px;
+	color:white;
+	text-decoration: none;
+	margin: 0px;
+}
+
+span#homecalendarbutton {
+	padding:1% 5%;
+	background-color: #00c6d4;
+}
+
+span#homecalendarbutton:hover {
+	padding:1% 5%;
+	background-color: #002863;
+}
+
+/*FOR ABOUT US CARD*/
+td#homeaboutusbutton {
+	text-align: center;
+	width: 50%;
+	height: 0%;
+}
+
+a#homeaboutusbutton {
+	font-size: 26px;
+	color:white;
+	text-decoration: none;
+	margin: 0px;
+}
+
+span#homeaboutusbutton {
+	padding:1% 5%;
+	background-color: #00c6d4;
+}
+
+span#homeaboutusbutton:hover {
+	padding:1% 5%;
+	background-color: #002863;
+}
+
+#homeaboutusimage {
+	height: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+
+}
+
+/*FOR ACTIVITIES CARD*/
+td#homeactivitiesbutton {
+	text-align: center;
+}
+
+div#homeactivitiesbuttoncontainer {
+	position: relative;
+	width: 200px;
+	margin: 0 auto;
+}
+
+img#homeactivitiesbutton {
+	height: 200px;
+	width: 200px;
+	display: block;
+}
+
+div#homeactivitiesbuttonoverlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+div#homeactivitiesbuttonoverlay:hover {
+	opacity: 90%;
+}
+
+img#homeactivitiesbutton:hover {
+	opacity: 10%;
+} 
+
+p#homeactivitiesbutton {
+	font-size: 21px;
+	color: #ababab;
+	position: absolute;
+}
+
+/*FOR FAQS CARD*/
+td#homefaqsbutton {
+	text-align: center;
+	margin: 200px;
+	padding: 30px 0%;
+}
+
+a#homefaqsbutton {
+	font-size: 26px;
+	color:white;
+	text-decoration: none;
+	margin: 0px;
+}
+
+span#homefaqsbutton {
+	padding:1% 5%;
+	background-color: #00c6d4;
+}
+
+span#homefaqsbutton:hover {
+	padding:1% 5%;
+	background-color: #002863;
+}

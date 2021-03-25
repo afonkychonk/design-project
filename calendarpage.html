@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calendar Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale= 1.0">
+	<link rel="stylesheet" type="text/css" href="designproject.css">
+	<link rel="stylesheet" type="text/css" href="calendarpage.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<!--the header menu -->
+		<ul class="homemenu">
+			<li class="homemenu"><a href="homepage.html"><img class="homemenu" src="https://www.ibo.org/globalassets/digital-toolkit/logos-and-programme-models/associations-of-ibws/associations-of-ibws_rev-en.png" alt="school logo"></a></li>
+			<li class="homemenucenter"><p class="homemenucenter">The Pitta School</p></li>
+		</ul>
+
+	<!--the bar menu -->
+	<ul class="menu">
+		<li class="menu"><a href="homepage.html" class="menu">Home</a></li>
+		<li class="menu"  id="active"><a href="calendarpage.html" class="menu">Calendar</a></li>
+		<li class="dropdown">
+			<a href="aboutus.html" class="dropbtn">About Us</a>
+			<div class="dropdown-content">
+				<a href="ourschool.html">Our School</a>
+				<a href="ourstudents.html">Our Students</a>
+				<a href="ourteachers.html">Our Teachers</a>
+			</div>
+		<li class="dropdown">
+			<a href="activities.html" class="dropbtn">Activities</a>
+			<div class="dropdown-content">
+				<a href="sports.html">Sports</a>
+				<a href="arts.html">The Arts</a>
+				<a href="activitiesothers.html">Others</a>
+			</div>
+		<li class="dropdown">
+			<a href="faqs.html" class="dropbtn">FAQs</a>
+			<div class="dropdown-content">
+				<a href="ib.html">The IB</a>
+				<a href="school.html">The School</a>
+			</div>
+	</ul>
+
+	<!--the page header text -->
+	<ul class="maintext">
+		<li class="maintext"><p class="maintext">Calendar Page</p></li>
+	</ul>
+
+	<!--the calendar -->
+	<div id="calendar">
+	  <!--id0 Jan -->
+	  <table class="calendar" id="id0">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">Janurary</span></p></th>
+	    </tr>
+	    <tr>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">8</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">End of Winter Break from December 23rd to Jan 8th.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">25</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">National holiday, no school for students and teachers.</p></td>
+	          </tr>
+	        </table>
+		    </td>
+		</tr>
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button type="button" disabled>
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openFeb">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id1 -->
+	  <table class="calendar" id="id1">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">Feburary</span></p></th>
+	    </tr>
+	    <tr>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">12</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Teacher in-Service Training Day, no school for students.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">15-19</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">End-of-term break, from 15th to 19th.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">25</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Virtual open house at 17:30 for new students to visit.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	    </tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openJan">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openMar">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id2 -->
+	  <table class="calendar" id="id2">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">March</span></p></th>
+	    </tr>
+	    <tr>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">5</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Virtual parent teacher student conferences for Kindergarden to G5</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">9-11</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">G12 Drama performances, part of the concert series at the auditorium.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">29</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Parent Academy: Supporting Your Child through Times of Transition</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">29</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Start of Easter holidays until April 5th</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openFeb">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openApr">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id3 -->
+	  <table class="calendar" id="id3">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">April</span></p></th>
+	    </tr>
+	    <tr>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">5</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">End of Easter holidays until April 5th. Classes resume on following day.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">7-8</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">G12 Visual Arts exhibition at the auditorium.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">9</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Parent Teacher Student conferences for G6-G11</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	    </tr>
+	    <tr>
+	    	<td class="calendardates" id="calendarevent">
+		        <table class="calendardates">
+		          <tr>
+		            <td class="date"><p class="date"><span class="date">14</span></p></td>
+		          </tr>
+		          <tr>
+		            <td class="datedescription"><p class="datedescription">PSAT examination for applicants during school day.</p></td>
+		          </tr>
+		        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">29</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Virtual open house at 17:30 for new students to visit.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	         <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">29</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Start of IBDP Exams from Apr. 29 to May. 21</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openMar">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openMay">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id4 -->
+	  <table class="calendar" id="id4">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">May</span></p></th>
+	    </tr>
+	    <tr>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">3</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">National Holiday, no school for students and teachers.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">10-20</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">MYP E-Assessments from May 10th to 20th.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">21</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">End of IBDP Exams from Apr. 29 to May. 21.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openApr">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openJun">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id5 -->
+	  <table class="calendar" id="id5">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">June</span></p></th>
+	    </tr>
+	    <tr>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">1</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Middle School Drama: Alice in Wonderland.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">11</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">High School Graduation, subject to change due to COVID-19</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">25</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Last day of academic year, start of Summer Holidays.</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	    </tr>
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openMay">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openJul">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id6 -->
+	  <table class="calendar" id="id6">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">July</span></p></th>
+	    </tr>
+	    <tr>
+	      <td class="datedescription" colspan="3"><p class="datedescription"><strong><em>Summer Holidays School resumes Sep. 6</em></strong></p></td>
+	    </tr>
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openJun">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openAug">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id7 -->
+	  <table class="calendar" id="id7">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">August</span></p></th>
+	    </tr>
+	    <tr>
+	      <td class="datedescription" colspan="3"><p class="datedescription"><strong><em>Summer Holidays School resumes Sep. 6</em></strong></p></td>
+	    </tr>
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openJul">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openSep">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id8 -->
+	  <table class="calendar" id="id8">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">September</span></p></th>
+	    </tr>
+	    <tr>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date">6</span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">Start of school</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	      <td class="calendardates" id="calendarevent">
+	        <table class="calendardates">
+	          <tr>
+	            <td class="date"><p class="date"><span class="date"><em>Note</em></span></p></td>
+	          </tr>
+	          <tr>
+	            <td class="datedescription"><p class="datedescription">No events further planned at current</p></td>
+	          </tr>
+	        </table>
+	      </td>
+	  </tr>
+
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openAug">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openOct">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id9 -->
+	  <table class="calendar" id="id9">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">October</span></p></th>
+	    </tr>
+	     <tr>
+	      <td class="datedescription" colspan="3"><p class="datedescription"><strong><em>No events are currently planned for the 2021-22 academic year</em></strong></p></td>
+	    </tr>
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openSep">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openNov">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id10 -->
+	  <table class="calendar" id="id10">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">November</span></p></th>
+	    </tr>
+	     <tr>
+	      <td class="datedescription" colspan="3"><p class="datedescription"><strong><em>No events are currently planned for the 2021-22 academic year</em></strong></p></td>
+	    </tr>
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openOct">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button class="openDec">
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+
+	  <!--id11 -->
+	  <table class="calendar" id="id11">
+	    <tr>
+	      <th class="calendarmonth" colspan="3"><p class="calendarmonth"><span class="calendarmonth">December</span></p></th>
+	    </tr>
+	     <tr>
+	      <td class="datedescription" colspan="3"><p class="datedescription"><strong><em>No events are currently planned for the 2021-22 academic year</em></strong></p></td>
+	    </tr>
+	    <tr>
+	      <td class="changemonth" id="leftarrow">
+	        <button class="openNov">
+	          <div class="container" id="leftarrow">
+	            <img src="back.png" class="arrowicon">
+	            <p class="previousmonth">Previous Month</p>
+	          </div>
+	        </button>
+	      </td>
+	      <td class="changemonth">
+	      </td>
+	      <td class="changemonth" id="rightarrow">
+	        <button type="button" disabled>
+	          <div class="container" id="rightarrow">
+	            <p class="nextmonth">Next Month</p>
+	            <img src="next.png" class="arrowicon">
+	          </div>
+	        </button>
+	      </td>
+	    </tr>
+	  </table>
+</div>
+
+<script type="text/javascript" src="calendar.js"></script> 
+
+</body>
+</html>
